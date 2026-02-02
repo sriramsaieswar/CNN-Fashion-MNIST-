@@ -44,7 +44,7 @@ def load_model():
         metrics=['accuracy']
     )
 
-    model.fit(x_train, y_train, epochs=1, validation_data=(x_test, y_test), verbose=0)
+    model.fit(x_train, y_train, epochs=1, validation_data=0.1)
     return model
 
 model = load_model()
